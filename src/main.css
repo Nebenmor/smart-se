@@ -179,8 +179,20 @@
   }
 }
 @layer utilities {
+  .absolute {
+    position: absolute;
+  }
   .relative {
     position: relative;
+  }
+  .top-0 {
+    top: calc(var(--spacing) * 0);
+  }
+  .left-0 {
+    left: calc(var(--spacing) * 0);
+  }
+  .-z-40 {
+    z-index: calc(40 * -1);
   }
   .container {
     width: 100%;
@@ -221,6 +233,9 @@
   .w-auto {
     width: auto;
   }
+  .grow {
+    flex-grow: 1;
+  }
   .flex-col {
     flex-direction: column;
   }
@@ -232,6 +247,9 @@
   }
   .justify-center {
     justify-content: center;
+  }
+  .overflow-hidden {
+    overflow: hidden;
   }
   .rounded-4xl {
     border-radius: var(--radius-4xl);
@@ -344,12 +362,8 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
   width: 100%;
-  z-index: -20;
+  height: 100vh;
 }
 @property --tw-font-weight {
   syntax: "*";
