@@ -11,8 +11,10 @@
     />
   </head>
   <body class="p-0 m-0 box-border font-Quicksand bg-GeneralBgColor">
-    <div class="relative hero-bg">
-      <header class="container mx-auto pt-6">
+    <div
+      class="bg-[url('/img/heroBG.png')] h-[29rem] bg-center bg-no-repeat lg:h-screen w-full bg-cover px-4"
+    >
+      <header class="container mx-auto pt-6 sm:px-4 lg:px-0">
         <!-- Flex container -->
         <div class="flex justify-between items-center">
           <!-- nav-left -->
@@ -27,7 +29,7 @@
 
             <!-- Menu items -->
             <div
-              class="flex justify-center items-center text-lg text-offWhite font-bold pl-8"
+              class="hidden md:flex justify-center items-center text-lg text-offWhite font-bold pl-8"
             >
               <a href="#home" class="px-2 py-4">Home</a>
               <a href="#pages" class="px-2 py-4">Pages</a>
@@ -40,45 +42,70 @@
           </div>
 
           <!-- right - phone number and button -->
-          <div class="flex justify-center items-center">
+          <div class="hidden md:flex justify-center items-center">
             <!-- Telephone Icon -->
-            <i
+            <div class="hidden lg:block" >
+              <i
               class="bx bx-phone-call bg-darkBlue text-2xl text-offWhite rounded-full p-2"
             ></i>
+            </div>
             <!-- Telephone number -->
-            <h2 class="text-xl font-bold text-offWhite px-6">1800 458 96 57</h2>
+            <h2 class="whitespace-nowrap hidden lg:block text-xl font-bold text-offWhite px-6">
+              1800 458 96 57
+            </h2>
             <!-- button -->
             <a
               href="#"
-              class="text-lg text-offWhite ml-6 px-10 py-4 bg-normBlue rounded-4xl font-bold"
+              class="whitespace-nowrap md:text-sm md:px-5 md:py-2 lg:text-lg text-offWhite ml-6 lg:px-10 lg:py-4 bg-normBlue rounded-4xl font-bold"
               >Let's talk</a
-            >
+            >      
+            <!-- <button class=" lg:text-lg text-offWhite ml-6 lg:px-10 lg:py-4 bg-normBlue rounded-4xl font-bold" >Let's talk</button> -->
+          </div>
+          <!-- Search Icon -->
+          <div class="flex justify-center items-center md:hidden" >
+            <div >
+              <i class="bx bx-search text-4xl text-offWhite pt-1.5"></i>
+            </div>
+            <!-- Hamburger menu -->
+            <div >
+              <i class='bx bx-menu text-white text-4xl'></i>
+            </div>
           </div>
         </div>
       </header>
 
       <!-- Hero Section -->
-      <section id="hero" class="overflow-hidden" >
-        <!-- Hero background -->
-        <!-- <div class="absolute top-0 left-0 -z-40">
-          <img src="./img/heroBG.png" alt="">
-        </div> -->
-        <div class="flex flex-col justify-center text-center pt-[7.5rem]">
-          <h1 class="text-7xl font-bold text-offWhite">
+      <section id="hero" class="overflow-hidden">
+        <div class="flex flex-col justify-center text-center">
+          <!-- Desktop h1 -->
+          <h1 class="hidden md:block text-4xl lg:text-7xl font-bold text-offWhite md:pt-[2.5rem] lg:pt-[7.5rem]">
             <span class="block md:whitespace-nowrap"
               >Turning creative ideas</span
             >
             <span class="block md:whitespace-nowrap">into success</span>
           </h1>
 
-          <p class="text-base text-offWhite font-bold pt-4">
+          <!-- Mobile h1 -->
+          <h1 class="md:hidden pt-12 text-4xl lg:text-7xl font-bold text-offWhite">
+            <span class="block md:whitespace-nowrap"
+              >Turning creative</span
+            >
+            <span class="block md:whitespace-nowrap">ideas into success</span>
+          </h1>
+
+
+          <!-- mobile p -->
+          <p class="md:hidden text-base text-offWhite font-bold pt-4">
             <span class="block whitespace-nowrap"
-              >Consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt</span
+              >Consectetur adipiscing elit, sed do eiusmod 
+              </span
             >
             <span class="block whitespace-nowrap pt-2"
-              >dolore magna aliqua quis nostrud exerc.</span
+              >tempor incididunt</span
             >
+            <span class="block whitespace-nowrap pt-2"
+            >dolore magna aliqua quis nostrud exerc.</span
+          >
           </p>
 
           <!-- Button -->
@@ -94,6 +121,5 @@
     </div>
 
     
-  
   </body>
 </html>
