@@ -3,9 +3,11 @@
 
 @theme {
     --color-offWhite: #f9f9f9;
-    --color-darkBlue: #0e003d;
+    --color-telephoneBlue: #0e003d;
+    --color-darkBlue: #080337;
     --color-normBlue: #4703ff;
     --color-lightPurple: #05bed6;
+    --color-customGray: #5B6E7C;
     --color-GeneralBgColor: #dfe4ea;
     --font-Quicksand: "Quicksand", "sans-serif"; 
     --font-DMSans: "DM Sans", "sans-serif";
