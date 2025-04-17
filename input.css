@@ -1,16 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Quicksand:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Quicksand:wght@300..700&display=swap");
 @import "tailwindcss";
 
 @theme {
-    --color-offWhite: #f9f9f9;
-    --color-telephoneBlue: #0e003d;
-    --color-darkBlue: #080337;
-    --color-normBlue: #4703ff;
-    --color-lightPurple: #05bed6;
-    --color-customGray: #5B6E7C;
-    --color-GeneralBgColor: #dfe4ea;
-    --font-Quicksand: "Quicksand", "sans-serif"; 
-    --font-DMSans: "DM Sans", "sans-serif";
-    --breakpoint-sm: 30rem;
-  }
-  
+  --color-offWhite: #f9f9f9;
+  --color-telephoneBlue: #0e003d;
+  --color-darkBlue: #080337;
+  --color-normBlue: #4703ff;
+  --color-lightPurple: #05bed6;
+  --color-customGray: #5b6e7c;
+  --color-lighterGray: #6b6e7c;
+  --color-GeneralBgColor: #dfe4ea;
+  --color-lighterGray: #6b6e7c;
+  --font-Quicksand: "Quicksand", "sans-serif";
+  --font-DMSans: "DM Sans", "sans-serif";
+  --breakpoint-sm: 30rem;
+}
