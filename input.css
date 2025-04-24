@@ -9,8 +9,10 @@
   --color-lightPurple: #05bed6;
   --color-customGray: #5b6e7c;
   --color-lighterGray: #6b6e7c;
+  --color-footerGray: #979caa;
   --color-GeneralBgColor: #dfe4ea;
-  --color-lighterGray: #6b6e7c;
+  --color-inputBackground: #fcfcfc;
+  --color-inputBackground2: #111922;
   --font-Quicksand: "Quicksand", "sans-serif";
   --font-DMSans: "DM Sans", "sans-serif";
   --breakpoint-sm: 30rem;

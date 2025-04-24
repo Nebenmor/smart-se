@@ -16,22 +16,22 @@
     />
     <style>
       .swiper {
-      width: 100%;
-      padding-top: 50px;
-      padding-bottom: 50px;
-    }
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
 
-    .swiper-slide {
-      background-position: center;
-      background-size: cover;
-      width: 300px;
-      height: 300px;
-    }
+      .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+      }
 
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-    }
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+      }
     </style>
   </head>
 
@@ -56,7 +56,7 @@
             <div
               class="hidden md:flex justify-center items-center text-lg text-offWhite font-bold pl-8"
             >
-              <a href="#home" class="px-2 py-4">Home</a>
+              <a href="#home" class="px-2 py-4 hover:underline">Home</a>
               <a href="#pages" class="px-2 py-4">Pages</a>
               <a href="#portfolio" class="px-2 py-4">Portfolio</a>
               <a href="#blog" class="px-2 py-4">Blog</a>
@@ -106,7 +106,7 @@
         <div class="flex flex-col justify-center text-center">
           <!-- Desktop h1 -->
           <h1
-            class="hidden md:block text-4xl lg:text-7xl font-bold text-offWhite md:pt-[2.5rem] lg:pt-[7.5rem]"
+            class="hidden md:block text-4xl lg:text-7xl font-bold text-offWhite md:pt-[2.5rem] lg:pt-[7.5rem] 2xl:pt-56"
           >
             <span class="block md:whitespace-nowrap"
               >Turning Creative Ideas</span
@@ -291,30 +291,129 @@
       </div>
     </section>
 
-    <!-- Slider section: Swiper -->
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="./img/direction.png" />
-        </div>
-        <div class="swiper-slide">
-          <img src="./img/laptop.png" />
-        </div>
-        <div class="swiper-slide">
-          <img src="./img/folder.png" />
-        </div>
-        <div class="swiper-slide">
-          <img src="./img/graph.png" />
-        </div>
-        <div class="swiper-slide">
-          <img src="./img/folder.png" />
-        </div>
-        <div class="swiper-slide">
-          <img src="./img/laptop.png" />
+    <!-- Tech Slider section -->
+    <section class="pt-20 pb-36">
+      <div class="swiper gallery">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./img/direction.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/laptop.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/folder.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/graph.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/folder.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/laptop.png" />
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
+    <!-- Subscription section -->
+    <section class="container mx-auto">
+      <div
+        class="flex flex-col md:flex-row w-full justify-center items-center gap-16"
+      >
+        <!-- text  -->
+        <div>
+          <h2
+            class="text-xl md:text-3xl lg:text-4xl xl:text-5xl text-darkBlue font-bold w-full"
+          >
+            <span class="inline md:block">Subscribe for the</span>
+            <span class="inline md:block">exclusive updates!</span>
+          </h2>
+        </div>
+
+        <!-- email -->
+        <div>
+          <form action="#">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter Your Email Address"
+              class="bg-inputBackground px-5 md:px-5 lg:px-22 xl:px-43 py-4 rounded-4xl mr-2"
+            />
+            <a
+              href="#"
+              class="text-white px-4 md:px-8 lg:px-12 py-4 bg-normBlue rounded-4xl text-lg font-bold"
+            >
+              <i class="bx bx-paper-plane font-bold text-lg"></i> Subscribe
+            </a>
+          </form>
+          <!-- checkbox and text -->
+          <div class="flex justify-start items-center pt-4">
+            <input type="checkbox" name="" id="" />
+            <p class="font-DMSans text-lighterGray pl-2 underl">
+              I agree to the
+              <span class="underline"><a href="#">Privacy Policy</a></span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="pt-20 pb-36">
+      <div class="swiper testimonial">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./img/direction.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/laptop.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/folder.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/graph.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/folder.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/laptop.png" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Who we are section -->
+    <section
+      class="container mx-auto pt-10 px-5 md:px-8 lg:px-12 md:pt-0 lg:pt-10 xl:pt-48 xl:px-0"
+    >
+      <div
+        class="relative flex flex-col-reverse items-start justify-center md:flex-row md:justify-between gap-36 md:gap-0 lg:gap-0 xl:gap-64"
+      >
+        <!-- Left Side -->
+        <div class="md:w-1/2">
+          <h3 class="text-sm text-darkBlue font-bold pb-5 uppercase">
+            who we are
+          </h3>
+          <h2
+            class="text-2xl md:text-4xl lg:text-[2.6rem] xl:text-6xl text-darkBlue font-extrabold"
+          >
+            <span>We provide best</span>
+            <span>digital services</span>
+          </h2>
+
+          
+        </div>
+
+        
+      </div>
+    </section>
+
+    
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
