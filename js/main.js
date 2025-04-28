@@ -71,3 +71,16 @@ var swiper = new Swiper(".blogSwiper", {
   },
 });
 
+// Date
+const footerDate = document.getElementById("date");
+const newDate = new Date().getFullYear();
+if (footerDate) {
+  footerDate.innerHTML = newDate;
+}
+
+const blogDates = document.querySelectorAll(".blog-date");
+blogDates.forEach((blogDate) => {
+  blogDate.innerHTML = newDate;
+});
+
+console.log(newDate);
