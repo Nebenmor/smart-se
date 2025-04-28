@@ -48,3 +48,26 @@ var swiper = new Swiper(".testimonialSwiper", {
   keyboard: true,
 });
 
+// Blog Section
+var swiper = new Swiper(".blogSwiper", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 768px
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+  },
+});
+
