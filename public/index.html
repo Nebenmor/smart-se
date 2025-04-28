@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Smart SE</title>
+    <link rel="stylesheet" href="./index.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -14,6 +15,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+
     <style>
       .swiper {
         width: 100%;
@@ -37,67 +39,12 @@
         display: block;
         width: 100%;
       }
-
-      /* Mobile specific padding
-      @media (max-width: 767px) {
-        .swiper-wrapper {
-          padding-left: 30px;
-          padding-right: 30px;
-        }
-      } */
-
-      /* Hamburger Menu */
-      .hamburger {
-        cursor: pointer;
-        width: 24px;
-        height: 24px;
-        transition: all 0.25s;
-        position: relative;
-      }
-
-      .hamburger-top,
-      .hamburger-middle,
-      .hamburger-bottom {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 24px;
-        height: 2px;
-        background: #f9f9f9;
-        transform: rotate(0);
-        transition: all 0.5s;
-      }
-
-      .hamburger-middle {
-        transform: translateY(7px);
-      }
-
-      .hamburger-bottom {
-        transform: translateY(14px);
-      }
-
-      .open {
-        transform: rotate(90deg);
-        transform: translateY(0px);
-      }
-
-      .open .hamburger-top {
-        transform: rotate(45deg) translateY(6px) translate(6px);
-      }
-
-      .open .hamburger-middle {
-        display: none;
-      }
-
-      .open .hamburger-bottom {
-        transform: rotate(-45deg) translateY(6px) translate(-6px);
-      }
     </style>
   </head>
 
   <body class="p-0 m-0 box-border font-Quicksand bg-GeneralBgColor">
     <div
-      class="bg-[url('/img/heroBG.png')] h-[29rem] bg-center bg-no-repeat lg:h-screen w-full bg-cover px-0 md:px-4"
+      class="bg-[url('/public/img/heroBG.png')] h-[29rem] bg-center bg-no-repeat lg:h-screen w-full bg-cover px-0 md:px-4"
     >
       <header class="container mx-auto pt-6 px-4 lg:px-0 relative">
         <!-- Flex container -->
@@ -481,7 +428,7 @@
     </section>
 
     <!-- Testimonial Section -->
-    <section class="pt-20 pb-36">
+    <section class="container mx-auto pt-20 pb-36">
       <div class="swiper testimonialSwiper w-full h-full overflow-hidden">
         <div class="swiper-wrapper">
           <!-- Slide-1 -->
@@ -696,7 +643,7 @@
     </section>
 
     <!-- Blog Section -->
-    <section id="blog" class="pb-20">
+    <section id="blog" class="container mx-auto pb-20">
       <h3 class="text-darkBlue text-base text-center font-bold">OUR BLOG</h3>
       <h2 class="text-darkBlue md:text-4xl xl:text-6xl text-center font-bold">
         Latest articles
@@ -716,7 +663,7 @@
             <h3 class="text-base text-darkBlue font-bold text-left pt-2">
               Media SEO
             </h3>
-            <h2 class="text-3xl text-darkBlue font-bold text-left pl-4 py-4">
+            <h2 class="text-3xl text-darkBlue font-bold text-left">
               <span class="block">What's trending on designer's </span>
               <span class="block">charts this </span>
             </h2>
