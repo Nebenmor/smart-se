@@ -1,34 +1,3 @@
-      .swiper {
-        width: 100%;
-        padding-top: 50px;
-        padding-bottom: 50px;
-      }
-
-      .swiper-slide {
-        background-position: center;
-        background-size: cover;
-        width: 400px;
-        /* height: 400p; */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-      }
-
-      .swiper-slide img {
-        display: block;
-        width: 100%;
-      }
-
-      /* Mobile specific padding
-      @media (max-width: 767px) {
-        .swiper-wrapper {
-          padding-left: 30px;
-          padding-right: 30px;
-        }
-      } */
-
       /* Hamburger Menu */
       .hamburger {
         cursor: pointer;
