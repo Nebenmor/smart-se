@@ -751,6 +751,11 @@
       outline-style: none;
     }
   }
+  .sm\:-right-32 {
+    @media (width >= 30rem) {
+      right: calc(var(--spacing) * -32);
+    }
+  }
   .sm\:right-0 {
     @media (width >= 30rem) {
       right: calc(var(--spacing) * 0);
@@ -759,6 +764,21 @@
   .sm\:right-15 {
     @media (width >= 30rem) {
       right: calc(var(--spacing) * 15);
+    }
+  }
+  .sm\:right-\[6\.9rem\] {
+    @media (width >= 30rem) {
+      right: 6.9rem;
+    }
+  }
+  .sm\:right-\[10rem\] {
+    @media (width >= 30rem) {
+      right: 10rem;
+    }
+  }
+  .sm\:right-\[rem\] {
+    @media (width >= 30rem) {
+      right: rem;
     }
   }
   .sm\:w-auto {
