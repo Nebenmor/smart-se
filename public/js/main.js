@@ -84,3 +84,30 @@ blogDates.forEach((blogDate) => {
 });
 
 console.log(newDate);
+
+// Set up the Intersection Observer
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      // If the element is in the viewport
+      if (entry.isIntersecting) {
+        // Add the animate class to trigger animation
+        entry.target.classList.add("animate");
+      }
+    });
+  },
+  {
+    // Options for the observer
+    threshold: 0.2, // Trigger when at least 20% of the element is visible
+  }
+);
+
+// Observe all elements with the slide-up class
+document.querySelectorAll(".slideUp, .fadeIn").forEach((element) => {
+  observer.observe(element);
+});
+
+// If you also want to observe sections containing slide-up elements
+document.querySelectorAll(".animated-section").forEach((section) => {
+  observer.observe(section);
+});
