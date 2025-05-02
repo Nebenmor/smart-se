@@ -809,6 +809,24 @@
       }
     }
   }
+  .hover\:bg-white {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-white);
+      }
+    }
+  }
+  .hover\:hover\:text-normBlue {
+    &:hover {
+      @media (hover: hover) {
+        &:hover {
+          @media (hover: hover) {
+            color: var(--color-normBlue);
+          }
+        }
+      }
+    }
+  }
   .hover\:text-lightPurple {
     &:hover {
       @media (hover: hover) {
