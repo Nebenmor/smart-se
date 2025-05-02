@@ -102,7 +102,7 @@ const observer = new IntersectionObserver(
   }
 );
 
-// Observe all elements with the slide-up class
+// Observe all elements with the slideUp and fadeIn class
 document.querySelectorAll(".slideUp, .fadeIn").forEach((element) => {
   observer.observe(element);
 });
